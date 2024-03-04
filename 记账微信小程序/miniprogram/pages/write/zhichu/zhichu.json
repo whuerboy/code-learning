@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "myradio":"/components/myradio/myradio"
+  }
+}

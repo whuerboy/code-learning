@@ -1,0 +1,3 @@
+<!--pages/category/category.wxml-->
+<view class="word">pi</view>
+<canvas canvas-id="mypie" style="width:200px;height:200px;"></canvas>

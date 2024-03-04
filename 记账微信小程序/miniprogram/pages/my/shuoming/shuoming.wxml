@@ -1,0 +1,9 @@
+<!--pages/shuoming/shuoming.wxml-->
+<view class="container"style="width:750rpx;height:11687rpx;box-sizing:bordeer-box">
+<view class="text">记记记账账帐小程序可以实现以下功能哦！</view>
+<view class="text">1.通过账单界面的统计按钮可以及时查看自己的各类开销占比</view>
+<view class="text">2.通过点击账单界面的明细按钮可以查看指定日期的开销、收入流水</view>
+<view class="text">3.记账界面可以分交通、饮食、购物等方面记收入和支出</view>
+<view class="text">4.在我的界面可以调整界面模式、修改个人信息</view>
+</view>
+

@@ -1,0 +1,58 @@
+<!--pages/list/list.wxml-->
+<view class='containere' style="height: auto; position: relative; left: 1rpx; top: 168rpx">
+  <!-- <view class="page-section"> -->
+      <picker name="rq" mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view class="picker">
+           选择日期：
+           {{date}}
+        </view>
+      </picker>
+  </view>
+  <view class='containere' style="height: auto; position: relative; left: 1rpx; top: 142rpx">
+    <van-divider contentPosition="center" style="position: relative; left: -1rpx; top: 0rpx">---当日总价：{{dayprice}}---</van-divider>
+  </view>
+
+
+<!-- </view> -->
+  <view class='container' style="height: auto; position: relative; left: 1rpx; top: 106rpx">
+  <van-divider contentPosition="center">账单</van-divider>
+<view  wx:for="{{dataList}}" wx:key="index">
+  <view wx:if="{{ dataList.length != 0 }}">
+  <view class="shuoying">{{index+1}}</view>
+  <view class="srq">{{item.rq}}</view>
+  <view class='view_tupian_wenzi'>
+  <block  wx:if="{{item.fl==0}}">
+    <image class="image" src="{{img1}}" />
+  </block>
+<block  wx:if="{{item.fl==1}}">
+  <image class="image" src="{{img2}}" mode="topleft" />
+</block>
+<block   wx:if="{{item.fl==2}}">
+  <image  class="image" src="{{img3}}" mode="topleft"  />
+</block>
+<block  wx:if="{{item.fl==3}}">
+  <image class="image" src="{{img4}}" mode="topleft" />
+</block>
+<block  wx:if="{{item.fl==4}}">
+  <image class="image" src="{{img5}}" mode="topleft" />
+</block>
+  <view class="view_wenzi2">{{item.hf}}￥
+  <view class="text_small">备注:{{item.bz}}</view>
+</view>
+</view>
+  </view>
+  <!-- <view slot="footer"> -->
+    <!-- <van-button class='btn' type="mini" round bind:click='submit'> 删除 -->
+       <!-- </van-button> 
+       <button class='btn'  float="right" type='default' size='mini' bindtap='delete' id="{{item._id}}">删除</button>
+        <!-- </view> -->
+</view>
+<view wx:if="{{ dataList.length == 0 }}">
+   <view>这里空空如也</view> 
+  </view>
+</view>
+<view class="shouru" style="position: relative; left: 52rpx; top: -392rpx">总收入：</view>
+<view class="zhichu" style="position: relative; left: 52rpx; top: -368rpx">总支出：</view>
+<view>
+<button class="tocategory" style="position: relative; left: 0rpx; top: 686rpx" bindtap="tocategory">统计</button>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/my/my.wxml-->
+<view class="container" style="width: 779rpx; height: 460rpx; display: flex; box-sizing: border-box">
+
+  <view wx:if="{{loginOk}}">
+<view class="load" >
+  <view class="avatar">
+<image src="{{avatarUrl}}" ></image>
+</view>
+<text class="clickload" >{{nickName}}</text>
+</view>
+</view>
+<view>
+  <button type = "primary" bindtap="loadByWechat" wx:if="{{!loginOk}}" style="position: relative; left: 237rpx; top: 322rpx; width: 237rpx; height: 84rpx; display: block; box-sizing: border-box">登录</button>
+<button type="primary"bindtap="exit" wx:else  style="position: relative; left: 237rpx; top: 200rpx; width: 237rpx; height: 84rpx; display: block; box-sizing: border-box">退出登录</button>
+</view>
+<view class="container1">
+<button bindtap="shuoming" style="position: relative; left: 0rpx; top: 647rpx">使用说明</button>
+</view>
+</view>
+<view class="container1">
+<button bindtap="jisuan" style="position: relative; left: 21rpx; top: 150rpx">汇率计算</button>
+<button bindtap="fankui" style="position: relative; left: 21rpx; top: 150rpx">我要反馈</button>
+</view>
+
+
+
+
+

@@ -1,0 +1,11 @@
+<!--pages/write/write.wxml-->
+<view class="container" style="width: 749rpx; height: 1324rpx; display: flex; box-sizing: border-box; position: relative; left: 3rpx; top: -54rpx">
+
+
+<image src="/img/ji.png" style="width: 750rpx; height: 595rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx"></image>
+
+<view> <button class="shouru" bindtap="toshouru" style="position: fixed; bottom: 0; width: 680rpx; height: 130rpx; display: block; box-sizing: border-box; left: 35rpx; top: 882rpx">收入</button></view>
+
+<view> <button class="zhichu" bindtap="tozhichu" style="position: fixed; bottom: 0; width: 680rpx; height: 130rpx; display: block; box-sizing: border-box; left: 35rpx; top: 706rpx">支出</button></view>
+</view>
+

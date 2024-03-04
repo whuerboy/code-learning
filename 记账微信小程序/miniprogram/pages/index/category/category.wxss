@@ -1,0 +1,5 @@
+/* pages/category/category.wxss */
+canvas{
+  width:100%;
+  height:500rpx;
+}

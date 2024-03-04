@@ -1,0 +1,35 @@
+<!--pages/shouru/shouru.wxml-->
+<!--pages/shouru/index.wxml-->
+<!--index.wxml-->
+<view class="container" style="width: 750rpx; height: 1441rpx; display: flex; box-sizing: border-box; position: relative; left: 1rpx; top: 0rpx">
+<view> <button bindtap="toHome" style="position: relative; left: 0rpx; top: 0rpx">收入</button></view>
+<view class="r1" style="width: 354rpx; height: 93rpx; display: flex; box-sizing: border-box">
+    <view class="{{currentIndex==1?'item_active':'item'}}" bindtap="point" data-index="1"  style="position: absolute; left: 2rpx; top: 199rpx; width: 200rpx; height: 106rpx; display: flex; box-sizing: border-box">工资</view>
+    <view class="{{currentIndex==2?'item_active':'item'}}" bindtap="point" data-index="2"  style="position: absolute; left: 247rpx; top: 199rpx; width: 200rpx; height: 104rpx; display: flex; box-sizing: border-box">兼职</view>
+    <view class="{{currentIndex==3?'item_active':'item'}}" bindtap="point" data-index="3"  style="position: absolute; left: 500rpx; top: 200rpx; width: 200rpx; height: 104rpx; display: flex; box-sizing: border-box">理财</view>
+    <view class="{{currentIndex==4?'item_active':'item'}}" bindtap="point" data-index="4"  style="position: absolute; left: 2rpx; top: 389rpx; width: 200rpx; height: 104rpx; display: flex; box-sizing: border-box">礼金</view>
+    <view class="{{currentIndex==5?'item_active':'item'}}" bindtap="point" data-index="5"  style="position: absolute; left: 500rpx; top: 389rpx; width: 200rpx; height: 104rpx; display: flex; box-sizing: border-box">其他</view>
+</view>
+
+
+
+<view class="table" style="position: absolute; left: 10rpx; top: 943rpx; width: 731rpx; height: 356rpx; display: block; box-sizing: border-box">
+  <view class="row" style="position: absolute; left: 8rpx; top: -2rpx; width: 720rpx; height: 131rpx; display: flex; box-sizing: border-box">
+    <view class="cell">金额</view>
+    <view class="cell">
+      <input style="width: 372rpx; height: 47rpx; display: block; box-sizing: border-box" class="input" placeholder="请输入金额" />
+    </view>
+  </view>
+  <view class="row" style="position: absolute; left: 4rpx; top: 85rpx; width: 720rpx; height: 133rpx; display: flex; box-sizing: border-box">
+    <view class="cell" style="width: 218rpx; height: 56rpx; display: block; box-sizing: border-box">日期</view>
+    <view class="cell">
+      <input style="width: 368rpx; height: 56rpx; display: block; box-sizing: border-box" class="input" placeholder="请输入日期" />
+    </view>
+  </view>
+</view>
+
+
+<view> <button class="submit" bindtap="submit" style="position: absolute; left: 75rpx; top: 1185rpx; width: 214rpx; height: 75rpx; display: block; box-sizing: border-box">提交</button></view>
+
+<view> <button class="reset" bindtap="reset" style="position: absolute; left: 431rpx; top: 1187rpx; width: 225rpx; height: 75rpx; display: block; box-sizing: border-box">重置</button></view>
+</view>

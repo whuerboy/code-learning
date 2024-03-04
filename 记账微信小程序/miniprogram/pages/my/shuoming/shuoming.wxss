@@ -1,0 +1,7 @@
+/* pages/shuoming/shuoming.wxss */
+.container{
+  background-image:url('https://img.zcool.cn/community/0134745d0e4b7ea801213ec2afb9b1.jpg@1280w_1l_2o_100sh.jpg');
+}
+.text{
+  text-align:left;
+}

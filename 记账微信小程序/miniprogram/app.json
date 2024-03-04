@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/category/category",
+    "pages/my/my",
+    "pages/my/jisuan/jisuan",
+    "pages/my/shuoming/shuoming",
+    "pages/my/fankui/fankui",
+    "pages/write/write",
+    "pages/write/zhichu/zhichu",
+    "pages/write/shouru/shouru"
+  ],
+  "window": {
+    "backgroundColor": "#41B577",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#41B577",
+    "navigationBarTitleText": "记记记账账帐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/list-active.png",
+        "text": "账单"
+      },
+      {
+        "pagePath": "pages/write/write",
+        "iconPath": "img/write.png",
+        "selectedIconPath": "img/write-active.png",
+        "text": "记账"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
