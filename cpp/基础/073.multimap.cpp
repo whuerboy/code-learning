@@ -1,7 +1,7 @@
 //map中的所有元素都是pair，第一个元素是key值（用于索引），第二个是value，key不能相同
 #include<iostream>
 #include<map>
-using              namespace std;
+using namespace std;
 
 
 
